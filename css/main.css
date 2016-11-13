@@ -65,3 +65,11 @@ body {
 	font-weight:400;	
 	letter-spacing: normal;
 }
+.auto-height {
+	width: 560px;
+	height: 315px;
+}
+.center {
+	display: block;
+	margin: auto;
+}
