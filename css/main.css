@@ -39,6 +39,12 @@ body {
 .half-width {
 	width: 50%
 }
+.education-width {
+	width: 65%
+}
+.skill-width {
+	width: 35%
+}
 .italics {
 	font-style: italic;
 }
@@ -46,4 +52,7 @@ body {
 	background-color: #f5f5f5;
     border: 1px solid #e3e3e3;
     border-radius: 4px;
+}
+.light-weight {
+	font-weight:400;	
 }
