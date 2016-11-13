@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
+body {
+	background-color: 
+	rgba(255,255,247,1.00)
+}
 
 .col-xs-7 {
 	width: 65%
