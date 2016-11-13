@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.col-xs-7 {
+	width: 65%
+}
+.col-xs-5 {
+	width: 35%
+}
+.golden-color {
+	background-color: #E47911;
+}
+.profile-image {
+	width: 115px	;
+	height: auto;
+}
+.blue-font {
+	color: #337ab7;
+}
+.blue-color {
+	background-color: #337ab7;
+}
+.green-color {
+	background-color: #5cb85c;
+}
+.purple-color {
+	background-color: #663399;
+}
+.gray-font {
+	color: #55565A;
+}
+.full-width {
+	width: 100%
+}
+.half-width {
+	width: 50%
+}
