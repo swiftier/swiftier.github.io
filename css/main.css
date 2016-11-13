@@ -62,4 +62,6 @@ body {
 .behance {
 	display: block;
 	margin: auto;
+	font-weight:400;	
+	letter-spacing: normal;
 }
