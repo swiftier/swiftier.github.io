@@ -39,6 +39,9 @@ body {
 .half-width {
 	width: 50%
 }
+.quarter-width {
+	width: 25%	
+}
 .education-width {
 	width: 65%
 }
@@ -55,4 +58,8 @@ body {
 }
 .light-weight {
 	font-weight:400;	
+}
+.behance {
+	display: block;
+	margin: auto;
 }
