@@ -1,75 +1,178 @@
 @charset "UTF-8";
 /* CSS Document */
-body {
-	background-color: 
-	rgba(255,255,247,1.00)
+
+.teal {
+	color:rgba(117,228,187,1.00)	
 }
 
-.col-xs-7 {
-	width: 65%
+.yellow {
+	color: #f0f7a5
 }
-.col-xs-5 {
-	width: 35%
+.orange {
+	color: #ffa732
 }
-.golden-color {
-	background-color: #E47911;
+.green {
+	color:rgba(92,184,92,1.00)
 }
-.profile-image {
-	width: 115px	;
-	height: auto;
+.italic {
+	font-style: italic
 }
-.blue-font {
-	color: #337ab7;
+.coral {
+	color: #F08080
 }
-.blue-color {
-	background-color: #337ab7;
+.psImage {
+	float:left;
+	margin-right: 50px;
+	border: thick;
+	border: white;
+	
 }
-.green-color {
-	background-color: #5cb85c;
+.blue {
+	color:rgba(61,164,244,1.00);
 }
-.purple-color {
-	background-color: #663399;
+.blueTitle {
+	color:rgba(61,164,244,1.00);
 }
-.gray-font {
-	color: #55565A;
+.bio {
+	float: right;
+	font-weight: lighter;
+	text-align:right;
+	align-content: right;
+		width:70%;
 }
-.full-width {
-	width: 100%
+.separationLine {
+	border-right: 1px solid white;
 }
-.half-width {
+.book {
+	font-weight: lighter;
+	text-align:left;
+	align-content: left;
+	width:70%;
+	float: left;
+	min-width: 500px;
+}
+.monaco {
+	font-family: Monaco, "Lucida Console", "Andale Mono", "Courier New",   "Lucida Sans Typewriter", Consolas, monospace;
+}
+.purple {
+	color:rgba(175,125,252,1.00)
+}
+.darkestBackColor {
+	background-color: #000625
+}
+.darkNav {
+	background-color: #222;
+	border-bottom-right-radius: 1em;
+}
+.twitNav > a:hover {
+
+	border-bottom-right-radius: 1em;
+}
+.right {
+	float: right;
+}
+.psText {
+	text-align: left;
 	width: 50%
 }
-.quarter-width {
-	width: 25%	
-}
-.education-width {
-	width: 65%
-}
-.skill-width {
-	width: 35%
-}
-.italics {
-	font-style: italic;
-}
-.inset-back {
-	background-color: #f5f5f5;
-    border: 1px solid #e3e3e3;
-    border-radius: 4px;
-}
-.light-weight {
-	font-weight:400;	
-}
-.behance {
+.centerVid {
 	display: block;
 	margin: auto;
-	font-weight:400;	
-	letter-spacing: normal;
+	text-align: center
 }
-.auto-height {
-	width: 560px;
-	height: 315px;
+.amazon {
+	position: fixed;
+	float: right;
+	text-align: right;
+	bottom:0;
+	font-size: 22px !important;
+	font-weight: lighter !important;
 }
-.center {
-	display: block;
-	margin: auto;
+.largeBookFont {
+	font-size: 2em;
+}
+.whiteFont {
+	color: white;
+}
+.navDrop {
+	color:white;
+	font-size:24px;
+	background-color: #222;
+	border-bottom-left-radius: .4em;
+	padding:.5em;
+}
+
+.threeQuart {
+	width: 75%;
+}
+.scroll {
+	overflow: auto;
+}
+.flushLeft {
+	width: 60%;
+}
+.flushRight {
+	width: 60%;
+	float: right;
+}
+.blogPar {
+	width: 80%;
+}
+.blogTitle {
+	width:20%;
+}
+.lightenedBackground{
+	background-color:rgba(243,243,243,1.00)
+}
+.noMargTop {
+	margin-top: 0;
+}
+.triangle-isosceles {
+  position: relative;
+  padding: 15px;
+  margin: 1em 0 3em;
+  color: #000;
+  background: white;
+  border-radius: 10px;
+}
+
+/* creates triangle */
+.triangle-isosceles:after {
+  content: "";
+  display: block; /* reduce the damage in FF3.0 */
+  position: absolute;
+  bottom: -15px;
+  left: 50px;
+  width: 0;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: #d8d8d8 transparent;
+}
+.right-triangle-isosceles {
+  position: relative;
+  padding: 15px;
+  margin: 3em 0 1em;
+  color: #000;
+  background: white;
+  border-radius: 10px;
+}
+
+/* creates triangle */
+.right-triangle-isosceles:after {
+  content: "";
+  display: block; /* reduce the damage in FF3.0 */
+  position: absolute;
+  bottom: -15px;
+  right: 50px;
+  width: 0;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: #d8d8d8 transparent;
+}
+.shiftPage {
+	margin-top: 100px;
+	font-size:3.5em;
+}
+.shiftBlogDown {
+	margin-bottom:50px;
 }

@@ -84,7 +84,7 @@ sub {
   bottom: -.25em;
 }
 img {
-  border: 0;
+	border: medium;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -260,11 +260,14 @@ th {
     border: 1px solid #ddd !important;
   }
 }
-@font-face {
-  font-family: 'Glyphicons Halflings';
 
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+
+@font-face {
+
+	font-family: 'Glyphicons Halflings';
+
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -1082,11 +1085,12 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
-  background-color: #fff;
+  color:rgba(34,34,34,1.00);
+  background-color:rgba(237,237,237,1.00);
+  font-weight: lighter;
 }
 input,
 button,
@@ -1145,10 +1149,12 @@ img {
   border-radius: 50%;
 }
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 0;
-  border-top: 1px solid #eee;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-left: 0  #222222;
+	border-right: 0  #222222;
+	border-bottom: 0  #222222;
+	border-top: 1px solid #222222;
 }
 .sr-only {
   position: absolute;
@@ -1187,7 +1193,7 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color:#222222;
 }
 h1 small,
 h2 small,
@@ -1215,7 +1221,7 @@ h6 .small,
 .h6 .small {
   font-weight: normal;
   line-height: 1;
-  color: #777;
+  color: #222222;
 }
 h1,
 .h1,
@@ -1223,6 +1229,7 @@ h2,
 .h2,
 h3,
 .h3 {
+  font-family: 'Inconsolata', monospaces, "Lucida Console", "Andale Mono", "Courier New",   "Lucida Sans Typewriter", Consolas, monospace ;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -1246,8 +1253,9 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+	font-weight:light;
+  	margin-top: 10px;
+  	margin-bottom: 10px;
 }
 h4 small,
 .h4 small,
@@ -1261,7 +1269,7 @@ h5 .small,
 .h5 .small,
 h6 .small,
 .h6 .small {
-  font-size: 75%;
+  font-size: 90%;
 }
 h1,
 .h1 {
@@ -1281,14 +1289,14 @@ h4,
 }
 h5,
 .h5 {
-  font-size: 14px;
+  font-size: 16px;
 }
 h6,
 .h6 {
-  font-size: 12px;
+  font-size: 14px;
 }
 p {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
 }
 .lead {
   margin-bottom: 20px;
@@ -1417,6 +1425,8 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: 10px;
+    list-style: none;
+
 }
 ul ul,
 ol ul,
@@ -3122,9 +3132,9 @@ fieldset[disabled] .btn-default.active {
   background-color: #333;
 }
 .btn-primary {
-  color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+	color: #000525;
+	background-color: #FAC239;
+	border-color: #2e6da4;
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -3153,9 +3163,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active.focus,
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
-  color: #fff;
-  background-color: #204d74;
-  border-color: #122b40;
+	color: #fff;
+	background-color: #FAC239;
+	border-color: #122b40;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3219,9 +3229,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-success:active.focus,
 .btn-success.active.focus,
 .open > .dropdown-toggle.btn-success.focus {
-  color: #fff;
-  background-color: #398439;
-  border-color: #255625;
+	color: #fff;
+	background-color: #398439;
+	border-color: #000000;
 }
 .btn-success:active,
 .btn-success.active,
@@ -3613,9 +3623,9 @@ tbody.collapse.in {
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #262626;
+  color: #f5f5f5;
   text-decoration: none;
-  background-color: #f5f5f5;
+  background-color: #262626;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -4035,9 +4045,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-  text-decoration: none;
-  background-color: #eee;
+	text-decoration: none;
+	background-color:rgba(195,195,195,1.00);
 }
+
 .nav > li.disabled > a {
   color: #777;
 }
@@ -4534,14 +4545,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-right {
     float: right !important;
-    margin-right: -15px;
   }
   .navbar-right ~ .navbar-right {
     margin-right: 0;
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: #3F3F3F;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
@@ -4556,18 +4566,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+	color: #FFFFFF;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333;
-  background-color: transparent;
+	color: white;
+	background-color: #C3C3C3;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
+  color: white;
+  background-color: #3F3F3F;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4576,24 +4586,24 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #ddd;
+  border-color: white;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #ddd;
+  background-color:rgba(195,195,195,1.00);
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #888;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  border-color: #3F3F3F;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   color: #555;
-  background-color: #e7e7e7;
+  background-color: #3F3F3F;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -4601,7 +4611,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333;
+    color: white;
     background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
@@ -4621,7 +4631,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #777;
 }
 .navbar-default .navbar-link:hover {
-  color: #333;
+  color: white;
 }
 .navbar-default .btn-link {
   color: #777;
@@ -5008,7 +5018,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
+  background-color: e6e6e6;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -5863,14 +5873,15 @@ button.list-group-item-danger.active:focus {
   padding-bottom: 75%;
 }
 .well {
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+	min-height: 20px;
+	padding: 19px;
+	margin-bottom: 20px;
+	background-color:#D8D8D8;
+	border: 1px solid white;
+	border-radius: 20px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+	box-shadow: 0 0 2em #D2D2D2;
 }
 .well blockquote {
   border-color: #ddd;
